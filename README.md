@@ -4,9 +4,9 @@
 
 ## 效果预览
 
-24 张同模 showcase（v18：主题配饰 ≥2 + 多样脸颊贴纸 + 深色头饰对比锁；6×4）：
+v18 全员总览（主题配饰 ≥2 + 多样脸颊贴纸 + 深色头饰对比锁 + 女仆长大皇冠）：
 
-![6x4 showcase](samples/sheet-6x4.png)
+![v18 overview](samples/sheet-6x4.png)
 
 单张示例：
 
@@ -108,7 +108,7 @@
 | 不可变 | 脸型、脸大小、角度、眼睛位置和大小、裁切、脖子长短 |
 | 眼睛（1024 图） | 两眼中心大约 `(351, 736)`，眼高大约 `148`（约画面高度的 **14%**），误差 ±3% |
 | 头+头饰 | 约占画面高度 **45%～55%**；不许拍得更近 |
-| 上边 | 头饰最高点距顶 **≥ 20px**，头饰完整不进裁（女仆长小皇冠也算在内） |
+| 上边 | 头饰最高点距顶 **≥ 20px**，头饰完整不进裁（女仆长大皇冠也算在内） |
 | 下边 | 露出一小截一样长的脖子和颈链；不露肩膀、不露胸口 |
 | 背景 | `#1A1A1C` |
 | 参考 | 每张都要：**母版 + 一张合格同套图** |
@@ -148,7 +148,7 @@ Appearance: soft low side braid with blunt bangs, one longer left strand. MID do
 Appearance: messy short bob with soft bangs, one longer right strand. DEEP dopamine candy hair 60/30/10 deep teal jewel / neon magenta streak / lemon gold — underdye. UNIQUE maid headpiece: gothic pointed scallop lace, thick lace, charcoal INNER band wrapped by bright ivory outer frill PLUS thin hot-magenta piping ≥2px on the entire outer silhouette (HEADPIECE CONTRAST LOCK), center silver-trimmed emblem shaped like a tiny gamepad. Bangs clip: tiny pixel-heart cartridge. ONE cheek mark only: cream star sticker. Choker: teal velvet with a silver gamepad charm. Soft hair sparkle. Do NOT copy any clip, sticker, or checkmark from the master. NO crown.
 ```
 
-**合格 Appearance 示例 C（主 bot 小咪 · 女仆长 + 小皇冠）：**
+**合格 Appearance 示例 C（主 bot 小咪 · 女仆长 + 醒目大皇冠）：**
 
 ```
 Appearance: soft bob with blunt bangs and tiny cat-ear tufts, one longer left strand. BRIGHT dopamine candy hair 60/30/10 bubblegum hot pink / lemon gold / soft coral — chunky lemon underdye. UNIQUE HEAD-MAID maid headpiece: wide multi-layered Victorian lace with gold-trim ribbon bows, ivory outer frills wrapping rose-pink inner band PLUS thin gold piping ≥2px, with a LARGE dominant ornate gold crown (multi-point, clearly readable at thumbnail, several times larger than a tiny mini-crown) sitting on / rising from the lace — senior look, NOT a clone of ordinary maids; still integrated, never standalone. Center gold-trimmed emblem shaped like a cat-paw with tiny crown. Bangs clip: tiny gold crown charm. ONE cheek mark only: tiny gold star. Choker: double pearl strand with hanging gold crown charm. Soft hair sparkle. Do NOT copy checkmark/ballot from master.
@@ -199,7 +199,7 @@ Appearance: soft bob with blunt bangs and tiny cat-ear tufts, one longer left st
 |---|---|---|
 | 刘海发卡（必有） | 可爱小道具，能联想到工作 | 财务=算盘珠；文案=小羽毛笔；搬运=迷你纸箱；魔兽=小盾牌；巡检=小手电筒；验收=小勾选糖；美术=小调色盘；游戏=像素心卡带；Codex/日报=小卷轴 |
 | 脸颊标记（必有） | **默认多样可爱贴纸**；创可贴极少 | 星/心/闪光/小花/月牙/泪滴/迷你蝴蝶结等，全套互不雷同；**创可贴整套最多约 1～2 个 bot**，禁止人人创可贴 |
-| 颈链吊坠（可选第 3） | 与同一主题呼应 | 金币、羽毛、纸箱、游戏手柄、小皇冠（仅女仆长） |
+| 颈链吊坠（可选第 3） | 与同一主题呼应 | 金币、羽毛、纸箱、游戏手柄、皇冠（仅女仆长） |
 
 规则：
 
@@ -238,7 +238,7 @@ Appearance: soft bob with blunt bangs and tiny cat-ear tufts, one longer left st
 |---|---|---|---|---|---|---|---|---|---|---|
 | 01 | （例）投票 | 正常 | 齐刘海长直 | 发尾渐变 | 热珊瑚/奶油/柠檬金 | 宽层叠白蕾丝/厚蕾丝/米白描金 | 选票糖 | 小选票夹 | 金泪滴贴 | 金边白蕾丝+金环 |
 | 02 | （例）财务 | 正常 | 侧辫软刘海 | 发尾 | 薄荷珍珠/奶油/金 | 圆层奶油蕾丝/厚蕾丝/描金 | 小钱袋 | 算盘珠 | 金币爱心贴 | 珍珠+金币 |
-| 03 | （例）小咪女仆长 | 亮 | 猫耳软bob | 内层染 | 泡泡糖粉/柠檬金/珊瑚 | 多层维多利亚+玫瑰粉内带+金滚边+**小皇冠** | 猫爪+冠 | 小金冠吊 | 金星贴 | 双排珍珠+冠坠 |
+| 03 | （例）小咪女仆长 | 亮 | 猫耳软bob | 内层染 | 泡泡糖粉/柠檬金/珊瑚 | 多层维多利亚+玫瑰粉内带+金滚边+**醒目大皇冠** | 猫爪+冠 | 金冠吊坠 | 金星贴 | 双排珍珠+冠坠 |
 | 04 | … | … | … | … | … | … | … | … | … | … |
 
 新助手：先读上下文 → 表末加行 → 外观与主题配饰不与已有重复 → 同一母版出图。
@@ -257,7 +257,7 @@ Appearance: soft bob with blunt bangs and tiny cat-ear tufts, one longer left st
 | **人人创可贴 / 脸颊雷同** | 改成星/心/月牙/闪光/小花/泪滴/迷你蝴蝶结等互不重复；创可贴整套 ≤1～2 |
 | 配饰和职责无关 | 重读 bot 上下文，换主题道具 |
 | 脸上出现生硬工作图标 | 改成多样可爱贴纸；硬符号只留徽章/发卡的糖化版；创可贴极少 |
-| 分身戴了皇冠 / 女仆长看不出 | 分身去冠；小咪加强小皇冠与华贵头饰 |
+| 分身戴了皇冠 / 女仆长看不出 | 分身去冠；小咪加强醒目大皇冠与华贵头饰 |
 | 母版的对勾跑到别的号 | 英文写清不要抄母版配件 |
 | 总览眼睛不齐、头大小不一 | 不准交付 |
 
