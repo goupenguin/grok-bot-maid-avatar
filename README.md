@@ -36,13 +36,16 @@
 - **贴纸**：每边脸最多 1 个审美贴（星星、爱心、月牙等），不放握手、对勾这类硬图标；职能识别只在头饰徽章和发卡上。
 - **气质**：二次元 / 亚比 / 一点点小偶像，女仆框架不丢。
 
-## 完整提示词（v13）
+## 完整提示词（v13.2 · 比例锁死）
 
 <details>
-<summary>点击展开：一键完整提示词（复制这里或 PROMPT.md 整份即可）</summary>
+<summary>点击展开：一键完整提示词 v13.1（复制这里或 PROMPT.md 整份即可）</summary>
 
-````markdown
-# Grok Bot 女仆头像 · 一键完整提示词（v13 定稿）
+
+
+
+
+# Grok Bot 女仆头像 · 一键完整提示词（v13.2 定稿 · 比例锁死）
 
 > **使用方式：把本文件整份内容复制，粘贴发给你的 Grok Bot。**  
 > 不要拆成「完整版 / 一键版」两个文件——这一份就够。  
@@ -57,7 +60,7 @@
 
 1. 读每个 bot 的名字和职能，按第 5–7 节规则，给每个号分配**互不重复**的：发型剪影、饱和多巴胺糖果三色发色（必须有挑染 / 分色 / 内层染 / 发尾渐变 / 异色双马尾之一；**禁止黑发与水洗浅色**）、女仆蕾丝头饰变体、头饰正中金边职能徽章、刘海职能发卡、审美脸颊贴纸（每脸最多 1 个）、独特 choker。填进第 8 节表格（可增行）。
 2. 先出 01 当母版；之后每张都附上母版图，用第 3 节英文渲染块出图——**只换外观，姿势 / 脸 / 眼 / 裁切锁死**。
-3. 按第 9 节对齐：以眼睛为锚点缩放平移；背景只用 flood-fill 改成 `#1A1A1C`（绝不整体换色，免得把头发一起染掉）。
+3. 按第 9 节对齐：以眼睛为锚点**小幅**缩放平移（缩放必须在 0.92–1.08，超出就重出，禁止硬拉特写）；背景只用 flood-fill 改成 `#1A1A1C`（绝不整体换色，免得把头发一起染掉）。总览上所有号头大小必须与母版一致。
 4. 出带参考线的总览图 `sheet.png` 和圆形裁切预览 `sheet-circle.png`，按第 10 节 QA；不合格重出，不交付。
 5. **出完总览图并展示给用户之后，必须停下来问一句（可用选项按钮）：**  
    **「要不要一键给你名下所有 bot 都换上这套头像？」**  
@@ -90,6 +93,11 @@
 | 构图 | 露**一小截一样长的脖子 + choker**；往下直接裁掉；**不露肩膀、不露胸口** |
 | 背景 | `#1A1A1C`（Grok 移动端深色偏灰，不是纯黑） |
 | 改背景 | 只对与画布边缘连通的背景做 flood-fill；**绝不整体换色**（会把深色头发一起染掉） |
+| 脸占画布高度 | 约与母版一致；头+头饰整体高度约占画布 **45%–55%**，**禁止**特写放大到占满画布 |
+| 头饰完整 | 蕾丝女仆头饰**整圈必须在框内**，顶边不得被裁 |
+| 缩放硬顶 | 后处理对齐时统一缩放系数必须在 **0.92–1.08**；超出则**重出**，禁止硬拉近 |
+| 参考图 | 每张必须附母版；批量时再附一张已合格的同模 sibling 参考 |
+| 交付否决 | 任一号相对母版脸明显更大/更近、顶饰被裁、脖子长短不一 → **整张作废重出**，不得进 sheet |
 | 交付前 | 必须出带参考线的 guideline sheet，眼睛落在同一条线上才可交付 |
 
 ---
@@ -99,7 +107,7 @@
 ```
 Square 1:1 avatar. Flat 2D anime chibi icon, mouthless round face, two plain solid near-black vertical capsule eyes, NO eyebrows, NO eyelashes, pale blush. Big close-up head anchored lower-left, cropped by left and bottom edges, head tilted ~12° right, empty upper-right. Short identical neck with a choker visible, cropped right below; no shoulders, no chest. Plain dark grey background #1A1A1C. Match the master reference's pose, framing, face size and eye position EXACTLY; only appearance changes; leave empty space above the hair top.
 
-Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% SATURATED DOPAMINE CANDY colors — rich and vivid like maid-v11 / maid-v13, NEVER pastel/washed/light, NEVER black/charcoal/near-black], MUST use a vivid multi-color dye method ([chunky streak / vertical split two-tone / underdye / tip ombre / twin-tails different colors]), fancy maid lace headpiece ([variant]) with a small gold-trimmed [JOB EMBLEM] medallion at center (NOT a checkmark unless this bot is the vote bot), [JOB PROP] hair clip in the bangs, ONE tiny [AESTHETIC STICKER] beauty sticker on one cheek only (pimple-patch / aesthetic face decor — star / heart / sparkle / flower / crescent / teardrop / tiny bow; NEVER a job icon such as handshake, ballot, clipboard, gear, pokéball), [UNIQUE CHOKER], optional idol touch ([oversized bow / gem / sparkle]). Cute anime / yabi sparkle hair highlights. Do NOT copy any clip, sticker, or checkmark from the master reference.
+Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% SATURATED DOPAMINE CANDY colors — rich and vivid like maid-v11 / maid-v13, NEVER pastel/washed/light, NEVER black/charcoal/near-black], MUST use a vivid multi-color dye method ([chunky streak / vertical split two-tone / underdye / tip ombre / twin-tails different colors]), fancy maid lace headpiece ([variant]) with a small gold-trimmed [JOB EMBLEM] medallion at center (NOT a checkmark unless this bot is the vote bot), [JOB PROP] hair clip in the bangs, ONE tiny [AESTHETIC STICKER] beauty sticker on one cheek only (pimple-patch / aesthetic face decor — star / heart / sparkle / flower / crescent / teardrop / tiny bow; NEVER a job icon such as handshake, ballot, clipboard, gear, pokéball), [UNIQUE CHOKER], optional idol touch ([oversized bow / gem / sparkle]). Cute anime / yabi sparkle hair highlights. Do NOT copy any clip, sticker, or checkmark from the master reference. HARD FRAMING LOCK (never break): Match the master reference framing and face SCALE exactly — same distance from camera, same head size on canvas (eye height ≈14% of canvas like master). DO NOT zoom in closer than the master; leave empty dark margin above the full maid lace headpiece (≥20px). Entire lace headpiece inside frame; chin/neck/choker visible like reference. If the head fills more than ~55% of canvas height, too close — WRONG, regenerate. Attach BOTH master + one known-good sibling as references every generation.
 ```
 
 占位符替换规则见第 8 节分配表。
@@ -197,6 +205,9 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 | 11 | `11-mikemeng` | 咪可梦 | 蓬松短发 + 小呆毛 | 珊瑚发尾渐变 + 挑染 | 柠檬黄 / 奶油 / 热珊瑚 | 闪电 | 闪电 | 黄色小闪光（非精灵球） | 黄铃 |
 | 12 | `12-mikemeng2` | 咪可梦2 | 低侧麻花辫 + 小呆毛 | 发尾渐变 | 浓桃橙 / 杏 / 金 | 放大镜 | 清单 + 放大镜 | 杏色软月牙 | 金边 + 痣 |
 | 13 | `13-gamedev` | AI游戏开发 | 狼尾 + 高低短双马尾（**≠10**） | 洋红发尾 + 挑染 | 鲜青绿 / 热洋红 / 金 | 游戏手柄 | 像素手柄 | 洋红闪光星 | 像素珠 |
+| 14 | `14-xunjian` | 咪可梦通宵巡检 | 蓬松隔夜短发 + 左眼一缕卷 | 竖分色 + 发尾渐变 | 深靛紫 / 霓虹柠绿 / 金 | 新月雷达 | 月星夹 | 柠绿泪滴闪粉 | 靛丝绒 + 柠绿钉 |
+| 15 | `15-yanshou` | 咪可梦验收 | 低双马尾 + 齐刘海（马尾要低） | 发尾渐变 + 粗挑染 | 天蓝青 / 热西瓜粉 / 金 | PASS 印章 | 清单夹 | 白花小闪光 | 青粉糖果珠 |
+| 16 | `16-meishu` | 咪可梦美术总监 | 长软波浪 + 画笔侧发缕 | 粗挑染 + 发尾渐变 | 热玫洋红 / 水绿松石 / 金 | 调色盘 | 小画笔 | 玫粉爱心闪粉 | 画师丝带 + 调色盘吊坠 |
 
 新增 bot：在表末追加一行，发型 / 三色 / 徽章 / 发卡 / 贴纸 / choker 全部不与上表重复，再用同一母版出图。
 
@@ -207,12 +218,13 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 1. **分配** — 填第 8 节表（或增行）。  
 2. **母版** — 出 01，确认眼睛锚点与构图合格。  
 3. **批量出图** — 每张附母版 + 第 3 节英文块 + 该号外观占位符。  
-4. **对齐**（建议脚本化）  
-   - 测两眼中心与眼高  
-   - `scale = 148 / 实测眼高`  
-   - 平移使眼心到 `(351, 736)`  
+4. **对齐**（建议脚本化；**比例优先于硬凑锚点**）  
+   - 每张出图时必须附：**母版** + **一张已合格同模 sibling**（防后期漂移）  
+   - 测两眼中心与眼高；先算 `scale = 目标眼高 / 实测眼高`  
+   - **若 `scale` 不在 0.92–1.08：直接重出，禁止用大缩放硬拉成特写**  
+   - 仅在安全缩放内平移，使眼心靠近 `(351, 736)`（1024 画布；512 则按比例折半）  
    - flood-fill 背景 → `#1A1A1C`（只连通背景）  
-   - 复测：眼 ±3%；发顶 ≥ 20px  
+   - 复测硬门禁：眼位 ±3%；发顶/头饰顶 ≥ 20px；头饰不被裁；相对母版脸大小目视一致；sheet 上所有号眼睛一条线且头大小一致  
 5. **总览** — `sheet.png`（带水平参考线）+ `sheet-circle.png`（模拟 App 圆形头像）；把总览图展示给用户。  
 6. **QA** — 过第 10 节表；失败重出。  
 7. **停下来问用户（必做）** — 用清晰问题（可用选项）：  
@@ -238,6 +250,8 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 | 脖子长短、肩膀 / 胸口露出不一致 | 重申 `short identical neck + choker, no shoulders/chest`，再对齐 |
 | 背景变浅或把头发染了 | 只 flood-fill 与边缘连通的背景，禁止整体换色 |
 | 13 与 10 撞型 | 13 必须狼尾 + 高低短双马尾 + 手柄徽章；禁止卷发 / 皇冠 |
+| 底下几排突然放大、头饰被裁、脸比母版大一圈（showcase 翻车） | 出图时英文块加 HARD FRAMING LOCK；双参考（母版+合格 sibling）；对齐缩放锁死 0.92–1.08，超限重出不硬拉；sheet 目视头大小必须齐 |
+| 后处理「对齐」把图越修越近 | 比例锁死优先；锚点凑不齐就重出，不要靠放大救命 |
 | 眼睛位置不齐 | 未过 ±3% 不准交付；重跑对齐或重出 |
 
 ---
@@ -257,13 +271,13 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 | v9 | 灰底 `#1A1A1C`；女仆框架；基础个性化 |
 | v10–v11 | 同一模子锁定；短颈 + choker；渐变多色发 + 贴纸；米哈游剪影 / 三色 / 金边徽章；部分号仍有黑 / 炭灰发；脸上曾用职能硬图标 |
 | v12 | 全面糖果色 + 审美贴纸，但饱和度偏浅（用户拒：千篇一律） |
-| **v13（本定稿）** | 发色回到 **v11 级饱和多巴胺糖果**（非 pastel）；保留多种染发方式；**仍禁止黑 / 炭灰 / 近黑**；脸贴纸审美×1；职能只在徽章 + 发卡；05 低侧马尾；08 无高大呆毛；13 ≠ 10；**单文件一键提示词**；出图后必须先问「要不要一键换上」再换头像 |
+| **v13.2** | showcase 翻车复盘：英文块明确 eye height≈14%、双参考强制、头占高≤55%；对齐 scale>1.12 直接重出 |
+| **v13.1** | **比例锁死加固**：脸/头尺度相对母版不可变；头饰须完整入框；对齐缩放硬顶 0.92–1.08（超限重出）；出图双参考；英文块增加 HARD FRAMING LOCK；禁止用后处理硬拉特写 |
+| **v13** | 发色回到 **v11 级饱和多巴胺糖果**（非 pastel）；保留多种染发方式；**仍禁止黑 / 炭灰 / 近黑**；脸贴纸审美×1；职能只在徽章 + 发卡；05 低侧马尾；08 无高大呆毛；13 ≠ 10；**单文件一键提示词**；出图后必须先问「要不要一键换上」再换头像 |
 
 ---
 
-*End of v13 一键完整提示词. 图集：`/workspace/avatars/maid-v13/`。本文件自包含，无需再配 FULL / oneclick 第二份。*
-
-````
+*End of v13.2 一键完整提示词（比例锁死）. 图集：`/workspace/avatars/maid-v13/`。本文件自包含，无需再配 FULL / oneclick 第二份。*
 
 </details>
 
@@ -287,4 +301,4 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 
 ---
 
-*对应已上线的 maid-v13 图集标准。有问题直接在 Issues 提，或把反馈发给你的 Grok Bot。*
+*对应已上线的 maid-v13 / v13.2（比例锁死）图集标准。有问题直接在 Issues 提，或把反馈发给你的 Grok Bot。*
