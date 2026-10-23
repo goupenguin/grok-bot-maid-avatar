@@ -6,9 +6,9 @@
 
 ![overview](preview.png)
 
-| 女仆长（主 bot） | 分身 | 财务 bot | 游戏开发 bot | 工作日报 bot | 动漫彩蛋 |
+| 女仆长（主 bot） | 分身 | 财务 bot | 游戏开发 bot | 工作日报 bot | 游戏成就 bot |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![](samples/head-maid.png) | ![](samples/sub-bot.png) | ![](samples/finance-bot.png) | ![](samples/gamedev-bot.png) | ![](samples/daily-report-bot.png) | ![](samples/anime-cameo.png) |
+| ![](samples/head-maid.png) | ![](samples/sub-bot.png) | ![](samples/finance-bot.png) | ![](samples/gamedev-bot.png) | ![](samples/daily-report-bot.png) | ![](samples/game-achievement-bot.png) |
 
 配色档位示例：
 
@@ -24,12 +24,12 @@
 4. 你说「换上」，它就直接通知所有 bot 换好，不会再让每个 bot 来问你。
 5. 以后新加的 bot 会自动按同一套规则出图、直接换上。
 
-## 完整提示词（v19）
+## 完整提示词（v19.1）
 
 <details>
 <summary>点击展开（和 PROMPT.md 完全一样）</summary>
 
-# Grok Bot 女仆头像 · 一键提示词（v19）
+# Grok Bot 女仆头像 · 一键提示词（v19.1）
 
 > **主人：** 整份复制，发给你的主 bot 就行。
 > **Bot：** 照 §1 流程一步一步做；画图时只用 §4 的英文模板，只填 `{{槽位}}`，别的字一个都不要改。
@@ -70,7 +70,7 @@
 | 分身 / 副 bot | 普通女仆头饰，彼此不一样 | **禁止** |
 | 其他职能 bot | 普通女仆头饰，彼此不一样 | **禁止** |
 
-**动漫彩蛋**：每 6～8 个 bot 里挑 1 个（最好跟它的工作有关），轻轻致敬一个热门动漫：只借发色、一个标志性发卡，或者头饰上的纹样。脸型和模子都不变，不画 logo，不写字，也不照搬角色的脸。
+**动漫彩蛋（女仆 cos）**：每 6～8 个 bot 里挑 1 个（最好跟它的工作有关），做成热门动漫角色的**女仆 cos**：只借可认出发色、一个标志性发卡，或头饰上的纹样；必须仍是同一女仆模子、女仆蕾丝头饰、同一构图。禁止整只动物形态，禁止皮卡丘 / 宝可梦生物 / 电气鼠造型，禁止用吉祥物脸替换模子脸；不画 logo，不写字，也不照搬角色原脸。整套仍是一套女仆，彩蛋也是女仆装。
 
 ---
 
@@ -121,9 +121,9 @@ HEADPIECE: maid lace/ruffle/ribbon katyusha, unique to this bot — {{silhouette
 ROLE: {{HEAD MAID: a LARGE dominant ornate gold crown rising from the lace katyusha, with lace frill base, ribbon ties and maid emblem, clearly readable at thumbnail size | NO crown, no tiara}}.
 
 ACCESSORIES: bangs clip shaped like {{job-themed cute prop}}; ONE cheek sticker on one side: {{unique playful sticker}}; choker: {{choker + optional themed charm}}. Soft hair sparkle.
-{{optional ANIME CAMEO: hair palette / one signature clip / headpiece motif inspired by {{IP}}; no logo, no text, no character face}}
+{{optional ANIME CAMEO maid-cos only: hair palette / one signature clip / headpiece motif inspired by {{IP}}; SAME maid mold + maid lace katyusha + framing; NEVER full animal form, NEVER Pikachu/Pokémon/electric-mouse creature look, NEVER replace face mold with a mascot; no logo, no text, no character face}}
 
-NEGATIVE: no mouth, no eyebrows, no eyelashes, no realistic shading, no shoulders, no hats, helmets, horns, big headphones, standalone crown or tiara, no crown unless HEAD MAID, no cropped headpiece, no black or washed-pastel hair, no pure matte black headpiece without rim, no bandaid unless assigned, no UI icons on face, no text, no logo, no watermark, no copying the master's clip/sticker/emblem.
+NEGATIVE: no mouth, no eyebrows, no eyelashes, no realistic shading, no shoulders, no hats, helmets, horns, big headphones, standalone crown or tiara, no crown unless HEAD MAID, no cropped headpiece, no black or washed-pastel hair, no pure matte black headpiece without rim, no bandaid unless assigned, no UI icons on face, no text, no logo, no watermark, no copying the master's clip/sticker/emblem, no full animal form, no Pikachu, no Pokémon creature, no electric-mouse styling, no mascot face replacing the maid mold.
 ```
 
 **填好的例子**（只写槽位部分）
@@ -167,22 +167,23 @@ NEGATIVE: no mouth, no eyebrows, no eyelashes, no realistic shading, no shoulder
 - [ ] 任意两个人的头饰至少有 2 项不一样；徽章不重复。
 - [ ] 脸颊贴纸不重复；创可贴 ≤ 2 个。
 - [ ] 发卡不重复，而且都和各自的工作有关。
-- [ ] 只有 1 个皇冠，戴在女仆长头上；动漫彩蛋约占 1/6～1/8，最多不超过 1/4。
+- [ ] 只有 1 个皇冠，戴在女仆长头上；动漫彩蛋约占 1/6～1/8，最多不超过 1/4，且全部是女仆 cos（无动物形态、无皮卡丘/电气鼠造型）。
 - [ ] 没有任何一张出现负面清单里的东西。
 
 ---
 
 ## 8. 转发时请保留
 
-同一模子、双参考、0.92～1.08 缩放上限、`#1A1A1C` 背景、深色头饰对比锁、先读上下文、≥2 个主题配饰、贴纸不重复（创可贴最多 1～2 个）、女仆长的大皇冠和分身不戴冠、先给总览再换、主人同意后直接换。
+同一模子、双参考、0.92～1.08 缩放上限、`#1A1A1C` 背景、深色头饰对比锁、先读上下文、≥2 个主题配饰、贴纸不重复（创可贴最多 1～2 个）、女仆长的大皇冠和分身不戴冠、动漫彩蛋必须女仆 cos（禁止动物形态/皮卡丘/电气鼠）、先给总览再换、主人同意后直接换。
 
-*v19*
+**v19.1*
 
 </details>
 
 ## 版本
 
-- **v19**：改成通用角色叫法；固定出图顺序、单张检查、重画上限；英文模板只留 `{{槽位}}`；加了负面清单和整套检查。
+- **v19.1**：动漫彩蛋改为「女仆 cos」硬规则——可蹭角色发色/发卡/纹样，但必须同一女仆模子与女仆头饰；禁止动物形态、皮卡丘/宝可梦生物/电气鼠造型；去掉相关样图，预览改为通用职能示例。
+- v19：改成通用角色叫法；固定出图顺序、单张检查、重画上限；英文模板只留 `{{槽位}}`；加了负面清单和整套检查。
 - v18：女仆长大皇冠、脸颊贴纸多样化、主人同意后直接换。
 - 更早的版本见 git 历史。
 
