@@ -4,19 +4,15 @@
 
 ## 效果预览
 
-圆形头像预览（模拟 App 里的样子）：
+24 张同模 showcase（亮 / 正常 / 深混搭，6×4）：
 
-![圆形总览](samples/sheet-circle.png)
+![6x4 showcase](samples/sheet-6x4.png)
 
-带对齐参考线的方图总览：
+单张示例（含深档）：
 
-![方图总览](samples/sheet.png)
-
-单张示例：
-
-| 投票 | 小咪 | 搬运 | 咪可梦 | 游戏开发 |
-|:---:|:---:|:---:|:---:|:---:|
-| ![01](samples/01.png) | ![02](samples/02.png) | ![05](samples/05.png) | ![11](samples/11.png) | ![13](samples/13.png) |
+| 亮·电光青 | 深·葡萄 | 深·酒红 | 正常·珊瑚 | 深·翠绿 | 亮·粉青分色 |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| ![s01](samples/s01-bright-cyan.png) | ![s06](samples/s06-deep-grape.png) | ![s12](samples/s12-deep-wine.png) | ![s19](samples/s19-mid-coral.png) | ![s20](samples/s20-deep-emerald.png) | ![s21](samples/s21-bright-split.png) |
 
 ## 怎么用
 
@@ -32,14 +28,14 @@
 
 - **同一个模子**：脸型、眼睛位置、歪头角度、裁切一致；只换头发、头饰、徽章、发卡、贴纸、choker。
 - **构图**：大特写锚在左下，露一小截脖子 + choker，不露肩膀和胸口；背景 `#1A1A1C`。
-- **发色**：饱和多巴胺糖果色（热珊瑚、葡萄紫、电光青等），保留挑染 / 分色 / 内层染 / 发尾渐变；**不要黑发，也不要水洗浅色**。
+- **发色**：饱和多巴胺糖果色，**亮 / 正常 / 深**按自然比例混搭（深档用宝石底+亮挑染）；保留挑染 / 分色 / 内层染 / 发尾渐变；**不要黑发，也不要水洗浅色**。
 - **贴纸**：每边脸最多 1 个审美贴（星星、爱心、月牙等），不放握手、对勾这类硬图标；职能识别只在头饰徽章和发卡上。
 - **气质**：二次元 / 亚比 / 一点点小偶像，女仆框架不丢。
 
 ## 完整提示词（v13.3 · 比例锁死 · 发色三档）
 
 <details>
-<summary>点击展开：一键完整提示词 v13.1（复制这里或 PROMPT.md 整份即可）</summary>
+<summary>点击展开：一键完整提示词 v13.3（复制这里或 PROMPT.md 整份即可）</summary>
 
 
 
@@ -303,10 +299,10 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 ```
 ├── README.md              # 你正在看的说明
 ├── PROMPT.md              # 一键完整提示词（发给 Bot 用）
-├── preview.png            # 圆形预览缩略图
+├── preview.png            # 6×4 showcase 预览
 └── samples/
-    ├── sheet-circle.png   # 圆形总览
-    ├── sheet.png          # 带参考线的方图总览
+    ├── sheet-6x4.png      # 24 张总览
+    └── s*.png             # 单张样例（含亮/正常/深）
     ├── 01.png …           # 若干单张示例
 ```
 
