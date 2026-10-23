@@ -36,7 +36,7 @@
 - **贴纸**：每边脸最多 1 个审美贴（星星、爱心、月牙等），不放握手、对勾这类硬图标；职能识别只在头饰徽章和发卡上。
 - **气质**：二次元 / 亚比 / 一点点小偶像，女仆框架不丢。
 
-## 完整提示词（v13.2 · 比例锁死）
+## 完整提示词（v13.3 · 比例锁死 · 发色三档）
 
 <details>
 <summary>点击展开：一键完整提示词 v13.1（复制这里或 PROMPT.md 整份即可）</summary>
@@ -45,7 +45,11 @@
 
 
 
-# Grok Bot 女仆头像 · 一键完整提示词（v13.2 定稿 · 比例锁死）
+
+
+
+
+# Grok Bot 女仆头像 · 一键完整提示词（v13.3 定稿 · 比例锁死 · 发色三档）
 
 > **使用方式：把本文件整份内容复制，粘贴发给你的 Grok Bot。**  
 > 不要拆成「完整版 / 一键版」两个文件——这一份就够。  
@@ -107,7 +111,7 @@
 ```
 Square 1:1 avatar. Flat 2D anime chibi icon, mouthless round face, two plain solid near-black vertical capsule eyes, NO eyebrows, NO eyelashes, pale blush. Big close-up head anchored lower-left, cropped by left and bottom edges, head tilted ~12° right, empty upper-right. Short identical neck with a choker visible, cropped right below; no shoulders, no chest. Plain dark grey background #1A1A1C. Match the master reference's pose, framing, face size and eye position EXACTLY; only appearance changes; leave empty space above the hair top.
 
-Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% SATURATED DOPAMINE CANDY colors — rich and vivid like maid-v11 / maid-v13, NEVER pastel/washed/light, NEVER black/charcoal/near-black], MUST use a vivid multi-color dye method ([chunky streak / vertical split two-tone / underdye / tip ombre / twin-tails different colors]), fancy maid lace headpiece ([variant]) with a small gold-trimmed [JOB EMBLEM] medallion at center (NOT a checkmark unless this bot is the vote bot), [JOB PROP] hair clip in the bangs, ONE tiny [AESTHETIC STICKER] beauty sticker on one cheek only (pimple-patch / aesthetic face decor — star / heart / sparkle / flower / crescent / teardrop / tiny bow; NEVER a job icon such as handshake, ballot, clipboard, gear, pokéball), [UNIQUE CHOKER], optional idol touch ([oversized bow / gem / sparkle]). Cute anime / yabi sparkle hair highlights. Do NOT copy any clip, sticker, or checkmark from the master reference. HARD FRAMING LOCK (never break): Match the master reference framing and face SCALE exactly — same distance from camera, same head size on canvas (eye height ≈14% of canvas like master). DO NOT zoom in closer than the master; leave empty dark margin above the full maid lace headpiece (≥20px). Entire lace headpiece inside frame; chin/neck/choker visible like reference. If the head fills more than ~55% of canvas height, too close — WRONG, regenerate. Attach BOTH master + one known-good sibling as references every generation.
+Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% DOPAMINE CANDY hair at the assigned tier ([BRIGHT candy / MID candy / DEEP candy jewel]) — still chromatic and rich, NEVER pastel/washed, NEVER black/charcoal/near-black base; DEEP tier = dark jewel + bright streaks/tips OK], MUST use a vivid multi-color dye method ([chunky streak / vertical split two-tone / underdye / tip ombre / twin-tails different colors]), fancy maid lace headpiece ([variant]) with a small gold-trimmed [JOB EMBLEM] medallion at center (NOT a checkmark unless this bot is the vote bot), [JOB PROP] hair clip in the bangs, ONE tiny [AESTHETIC STICKER] beauty sticker on one cheek only (pimple-patch / aesthetic face decor — star / heart / sparkle / flower / crescent / teardrop / tiny bow; NEVER a job icon such as handshake, ballot, clipboard, gear, pokéball), [UNIQUE CHOKER], optional idol touch ([oversized bow / gem / sparkle]). Cute anime / yabi sparkle hair highlights. Do NOT copy any clip, sticker, or checkmark from the master reference. HARD FRAMING LOCK (never break): Match the master reference framing and face SCALE exactly — same distance from camera, same head size on canvas (eye height ≈14% of canvas like master). DO NOT zoom in closer than the master; leave empty dark margin above the full maid lace headpiece (≥20px). Entire lace headpiece inside frame; chin/neck/choker visible like reference. If the head fills more than ~55% of canvas height, too close — WRONG, regenerate. Attach BOTH master + one known-good sibling as references every generation.
 ```
 
 占位符替换规则见第 8 节分配表。
@@ -116,7 +120,7 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 
 ## 4. 必须保留（只能加强，不能删）
 
-1. **饱和**渐变发尾 / 多色发（挑染、左右分色、内层染、发尾 ombre、异色双马尾）——丰富度对齐 v11，饱和度对齐 v13  
+1. **三档混搭**的糖果发 + 渐变/多色染（挑染、左右分色、内层染、发尾 ombre、异色双马尾）——一套里亮/正常/深都有，丰富度对齐 v11  
 2. 脸颊**审美**贴纸（像真的小女孩会贴的痘痘贴 / 装饰贴）  
 3. 女仆蕾丝头饰 + 金边职能徽章 + 刘海职能发卡  
 4. 同一模子的脸 / 眼 / 构图 / 短颈 + choker  
@@ -124,11 +128,19 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 
 ---
 
-## 5. HARD：发色 = 饱和多巴胺糖果（不是粉嫩浅色，也不是黑发）
+## 5. HARD：发色 = 多巴胺糖果三档混搭（亮 / 正常 / 深）
 
-**目标：**颜色要跳、要浓、要多变；每个号方案互不重复。参考已上线的 v13 / 早期 v11 的饱和度，**不是** v12 那种洗白浅粉。
+**目标：**一套图里亮色、正常、深色**按正常概率混搭**即可（不必均分张数），不要全员荧光糊眼，也不要全员发暗或黑发。仍禁止黑发与水洗 pastel。
 
-**允许（饱和例）：**热珊瑚、泡泡糖粉、电光青、葡萄紫、柠檬黄、薄荷绿、宝蓝 + 星紫、西瓜红、青绿 + 洋红、杏橙、深薰衣草、热绯红、热洋红等。
+### 三档（按自然比例混用，写进分配表「档位」列；深档可以少一些）
+
+| 档位 | 感觉 | 允许例（仍要饱和、有色素，不是灰泥） | 禁止 |
+|---|---|---|---|
+| **亮** Bright candy | 跳、荧光感、偶像舞台灯 | 电光青、热洋红、柠檬黄、泡泡糖粉、荧光绿挑染 | 洗白浅粉、低饱和 pastel |
+| **正常** Mid candy | 最常用的「好看糖果」 | 珊瑚粉、葡萄紫、宝蓝、薄荷绿、杏橙 | 发灰、发脏、近黑 |
+| **深** Deep candy | 偏暗但仍是彩色；像夜店灯下的宝石 | 深葡萄紫、酒红、深宝蓝、墨绿、深紫红、深靛蓝 + 亮色挑染/发尾 | **纯黑 / 炭灰 / 近黑底**；深到跟 `#1A1A1C` 糊成一团 |
+
+**搭配建议：**深档用「深色底 + 亮色挑染 / 发尾 / 内层」最稳，既暗得住又不会背景糊发。
 
 **染发方式（每个号至少一种，优先互不重复）：**
 
@@ -140,14 +152,14 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 | 发尾渐变 | tip ombre |
 | 双马尾两边不同色 | twin-tails different colors |
 
-**禁止：**
+**禁止（全局）：**
 
-- 纯黑 / 近黑 / 炭灰 / 深棕（会跟 `#1A1A1C` 背景糊在一起）  
-- 粉嫩浅色、水洗感、低饱和 pastel（v12 翻车点：千篇一律、没个性）
+- 纯黑 / 近黑 / 炭灰 / 深棕当主发色（会跟 `#1A1A1C` 背景糊在一起）  
+- 粉嫩浅色、水洗感、低饱和 pastel（v12 翻车）  
+- 整套（或全团队）**不要只有亮档**；至少出现正常档与深档若干张，张数按自然感觉即可
 
-若参考旧版里有黑发：把黑发底换成饱和糖果底，**保留**其挑染 / 分色结构。
+若参考旧版里有黑发：把黑发底换成**深档糖果底**，**保留**其挑染 / 分色结构。
 
----
 
 ## 6. HARD：脸上贴纸（审美装饰，不是职能图标）
 
@@ -190,7 +202,7 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 文件根目录：`/workspace/avatars/maid-v13/`  
 每号有全尺寸 `NN-xxx.png` 与交付用 `NN-xxx-512.png`。
 
-| # | 文件 | Bot | 发型 / 不对称 | 染法 | 饱和糖果三色 (60/30/10) | 头饰徽章 | 刘海发卡 | 脸贴纸（审美×1） | choker / 配饰 |
+| # | 文件 | Bot | 档位 | 发型 / 不对称 | 染法 | 糖果三色 (60/30/10) | 头饰徽章 | 刘海发卡 | 脸贴纸（审美×1） | choker / 配饰 |
 |---|---|---|---|---|---|---|---|---|---|
 | 01 | `01-vote` | 投票 | 齐刘海长直 | 粗挑染 + 发尾渐变 | 热珊瑚洋红 / 奶油 / 柠檬金（禁黑） | 对勾 | 选票卡 | 金色泪滴闪粉 | 金边蕾丝 + 金环 |
 | 02 | `02-xiaomi` | 小咪 | 猫耳发束长发 | 白内层染 + 渐变 | 泡泡糖粉 / 白 / 金 | 猫爪 | 樱花 | 粉色爱心痘痘贴 | idol 大粉蝴蝶结 |
@@ -209,6 +221,8 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 | 15 | `15-yanshou` | 咪可梦验收 | 低双马尾 + 齐刘海（马尾要低） | 发尾渐变 + 粗挑染 | 天蓝青 / 热西瓜粉 / 金 | PASS 印章 | 清单夹 | 白花小闪光 | 青粉糖果珠 |
 | 16 | `16-meishu` | 咪可梦美术总监 | 长软波浪 + 画笔侧发缕 | 粗挑染 + 发尾渐变 | 热玫洋红 / 水绿松石 / 金 | 调色盘 | 小画笔 | 玫粉爱心闪粉 | 画师丝带 + 调色盘吊坠 |
 
+
+> **v13.3：**新做图集时在「档位」列填 亮 / 正常 / 深，按自然比例即可，不必均分。上表历史 v13 行未逐格改档位，复用时请自行标档后出图。
 新增 bot：在表末追加一行，发型 / 三色 / 徽章 / 发卡 / 贴纸 / choker 全部不与上表重复，再用同一母版出图。
 
 ---
@@ -271,13 +285,14 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 | v9 | 灰底 `#1A1A1C`；女仆框架；基础个性化 |
 | v10–v11 | 同一模子锁定；短颈 + choker；渐变多色发 + 贴纸；米哈游剪影 / 三色 / 金边徽章；部分号仍有黑 / 炭灰发；脸上曾用职能硬图标 |
 | v12 | 全面糖果色 + 审美贴纸，但饱和度偏浅（用户拒：千篇一律） |
+| **v13.3** | 发色改为**亮 / 正常 / 深**三档按正常概率混搭（不必均分）；深档用深色宝石底+亮挑染，仍禁黑发与 pastel；分配表须标档位 |
 | **v13.2** | showcase 翻车复盘：英文块明确 eye height≈14%、双参考强制、头占高≤55%；对齐 scale>1.12 直接重出 |
 | **v13.1** | **比例锁死加固**：脸/头尺度相对母版不可变；头饰须完整入框；对齐缩放硬顶 0.92–1.08（超限重出）；出图双参考；英文块增加 HARD FRAMING LOCK；禁止用后处理硬拉特写 |
 | **v13** | 发色回到 **v11 级饱和多巴胺糖果**（非 pastel）；保留多种染发方式；**仍禁止黑 / 炭灰 / 近黑**；脸贴纸审美×1；职能只在徽章 + 发卡；05 低侧马尾；08 无高大呆毛；13 ≠ 10；**单文件一键提示词**；出图后必须先问「要不要一键换上」再换头像 |
 
 ---
 
-*End of v13.2 一键完整提示词（比例锁死）. 图集：`/workspace/avatars/maid-v13/`。本文件自包含，无需再配 FULL / oneclick 第二份。*
+*End of v13.3 一键完整提示词（比例锁死）. 图集：`/workspace/avatars/maid-v13/`。本文件自包含，无需再配 FULL / oneclick 第二份。*
 
 </details>
 
@@ -301,4 +316,4 @@ Appearance: [HAIRSTYLE + one asymmetry], [MAIN 60% / SECONDARY 30% / ACCENT 10% 
 
 ---
 
-*对应已上线的 maid-v13 / v13.2（比例锁死）图集标准。有问题直接在 Issues 提，或把反馈发给你的 Grok Bot。*
+*对应已上线的 maid-v13 / v13.3（比例锁死 · 发色三档）图集标准。有问题直接在 Issues 提，或把反馈发给你的 Grok Bot。*
